@@ -105,7 +105,7 @@ export const DATA = {
     ],
     education: [
         {
-            school: "University of Waterloo",
+            school: "Universidad de Estudios Multinacionales",
             degree: "Master's in Education",
             logoUrl: "/uem-logo.jpg",
             start: "2018",
