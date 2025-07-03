@@ -121,6 +121,24 @@ export const DATA = {
     ],
     projects: [
         {
+            title: "The Doctor Photo - (Redesign in progress)",
+            href: "https://thedoctorphoto.com/",
+            dates: "",
+            active: true,
+            description: "E-commerce site for The Doctor Photo, offering personalized photo services including printing, restoration, and creative photomontages. Built for a seamless user experience, high-quality visuals, and optimized performance.",
+            technologies: [],
+            links: [
+                {
+                    type: "Website",
+                    href: "https://thedoctorphoto.com/",
+                    icon: <Icons.globe className="size-3" />,
+                },
+            ],
+            image: '/YDRAY-LOGO-FACEBOOK.webp',
+            video: "",
+            loom: "",
+        },
+        {
             title: "Optum AZ",
             href: "https://optumaz.com/",
             dates: "",

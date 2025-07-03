@@ -49,18 +49,18 @@ export function ProjectCard({
             }
         >
             <div className={cn("block", className)}>
-                {video && (
-                    <div className="relative w-full -left-[0.5px] aspect-video overflow-hidden">
-                        <iframe
-                            src={`https://www.youtube.com/embed/${video.split('/').pop()}?autoplay=1&mute=1&controls=0&loop=10&playsinline=10`}
-                            className="pointer-events-none absolute top-0 left-0 w-full h-full"
-                            title={title}
-                            // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        />
-                    </div>
-                )}
+{video && (
+  <div className="relative w-full -left-[0.5px] aspect-video overflow-hidden">
+    <iframe
+      src={`https://www.youtube.com/embed/${video.split('/').pop()}?autoplay=1&mute=1&controls=0&loop=1&playlist=${video.split('/').pop()}&playsinline=1`}
+      className="pointer-events-none absolute top-0 left-0 w-full h-full"
+      title={title}
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    />
+  </div>
+)}
+
 
                 {loom && (
                     <div className="relative w-full pb-[56.25%]">
@@ -78,7 +78,7 @@ export function ProjectCard({
                         alt={title}
                         width={500}
                         height={300}
-                        className="h-40 w-full overflow-hidden object-cover object-top"
+                        className="h-40 w-full overflow-hidden object-cover object-center"
                     />
                 )}
             </div>
