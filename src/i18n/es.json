@@ -1,0 +1,109 @@
+{
+    "hero_title": "Hola, soy Victor 👋",
+    "hero_subtitle": "Desarrollador frontend con más de 4 años de experiencia y amante del café hehe ☕️ 🤎",
+    "hero_span": "Mira mis proyectos",
+    "work_experience_title": "Experiencia laboral",
+    "experience": [
+        {
+            "title": "Osilver MX",
+            "rol": "Proyectos freelance",
+            "time": "",
+            "description": "Desarrollo de landing pages, sitios web, tiendas en línea (ecommerce), soluciones personalizadas y asesoramiento tecnológico a clientes. Realizo proyectos freelance enfocados en ofrecer presencia digital profesional y funcional.",
+            "logo": "/osilver.logo.webp"
+        },
+        {
+            "title": "The Creative Department",
+            "rol": "Desarrollador Frontend",
+            "time": "Marzo 2024 - Julio 2025",
+            "description": "Tengo experiencia creando sitios web completos desde cero utilizando frameworks como Next.js y bibliotecas como React, así como desarrollando nuevos módulos para plataformas existentes. Mi trabajo también incluye mantener y mejorar el rendimiento de sitios web actuales, implementando nuevos estilos y funcionalidades basados en diseños del equipo de UI/UX. Además, he integrado varios servicios y APIs de terceros, como fuentes de datos en tiempo real, Google Maps y WordPress, para mejorar la funcionalidad y la experiencia del usuario.",
+            "logo": "/tcd.logo.jpeg"
+        },
+        {
+            "title": "Interdesarrollos",
+            "rol": "Gerente de TI",
+            "time": "Diciembre 2023 – Marzo 2024",
+            "description": "Brindé soporte técnico tanto de forma remota como presencial, gestionando cuentas de correo y licencias de software ERP. Di mantenimiento a la plataforma Intercambiacasa utilizando PHP, MySQL, HTML y CSS, añadiendo nuevas funcionalidades y gestionando usuarios e inmuebles desde el panel de administración. Desarrollé y actualicé páginas de productos para la empresa usando WIX Studio y React. También me encargué de cotizaciones de equipo, control de inventario y propuse mejoras de flujo de trabajo para aumentar la eficiencia entre departamentos.",
+            "logo": "/interdesarrollos.jpeg"
+        },
+        {
+            "title": "The FUD Trailer",
+            "rol": "Soporte Técnico",
+            "time": "Febrero 2023 - Diciembre 2023",
+            "description": "Brindé soporte a usuarios tanto remotamente como en sitio, gestioné cuentas de correo y configuré accesos seguros para los departamentos utilizando filtrado por MAC o IP. Di mantenimiento y desarrollé sitios de productos con React y WordPress, integrando nuevos módulos y APIs externas. También me encargué de la administración de servidores y cuentas empresariales.",
+            "logo": "/the.fud.trailer.jpg"
+        },
+        {
+            "title": "Alleguard",
+            "rol": "Practicante de Soporte Técnico",
+            "time": "Febrero 2022 - Diciembre 2022",
+            "description": "Apoyé al equipo de desarrollo en la implementación y mantenimiento del portal corporativo utilizando C#, HTML, CSS y JavaScript. Contribuí en el desarrollo de componentes front-end para mejorar la experiencia del usuario, y brindé soporte técnico de segundo nivel, resolviendo problemas avanzados de software, hardware y red.",
+            "logo": "/alleguard.logo.jpeg"
+        }
+    ],
+    "about_me_title": "Sobre mí",
+    "about_me_description": "¡Hola! Soy Víctor. Me especializo en desarrollo front-end, creando experiencias de usuario fluidas e interactivas con tecnologías web modernas. Con más de 4 años de experiencia profesional, combino creatividad y habilidades técnicas para entregar proyectos de alta calidad. Fuera del código, soy un gran fanático del café y un amante de la lucha libre, siempre emocionado por explorar nuevas ideas e innovaciones en el mundo tecnológico.",
+    "projects_title": "Proyectos en los que he estado involucrado",
+    "projects": [
+        {
+            "title": "The Doctor Photo - (Rediseño en progreso)",
+            "link": "https://thedoctorphoto.com/",
+            "image": "/thedoctorphoto-logo.png",
+            "className": "object-cover bg-sky-400"
+        },
+        {
+            "title": "Optum CA Network",
+            "link": "https://optumcanetwork.com/",
+            "image": "/optum_orng_bg.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Calljar",
+            "link": "https://calljar.com/",
+            "image": "/jar-logo.svg",
+            "className": "object-contain bg-white py-6"
+        },
+        {
+            "title": "Nutrikas - (Rediseño en progreso)",
+            "link": "https://nutrikas.com.mx/",
+            "image": "/nutrikas-logo.png",
+            "className": "object-contain px-4"
+        },
+        {
+            "title": "Optum Resources",
+            "link": "https://resources.optum.com/",
+            "image": "/optum_bg_beige.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Broker Portal",
+            "link": "https://optumbrokerportal.com/",
+            "image": "/optum_bg_sky.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Plastic Surgery",
+            "link": "https://optumplasticsurgery.com/",
+            "image": "/optum_bg_beige.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Oregon",
+            "link": "https://optumor.com/",
+            "image": "/optum_orng_bg.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Arizona",
+            "link": "https://optumaz.com/",
+            "image": "/optum_bg_beige.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Washington",
+            "link": "https://optumwa.com/",
+            "image": "/optum_orng_bg.png",
+            "className": "object-cover"
+        }
+    ],
+    "link_label": "Ver proyecto"
+}

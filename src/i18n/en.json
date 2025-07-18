@@ -1,0 +1,109 @@
+{
+    "hero_title": "Hi, I'm Victor 👋",
+    "hero_subtitle": "Frontend developer with 4+ years of experience and coffee lover hehe ☕️ 🤎",
+    "hero_span": "Check out my projects",
+    "work_experience_title": "Work experience",
+    "experience": [
+        {
+            "title": "Osilver MX",
+            "rol": "Freelance projects",
+            "time": "",
+            "description": "Development of landing pages, websites, online stores (ecommerce), custom solutions, and tech consulting for clients. I work on freelance projects focused on delivering professional and functional digital presence.",
+            "logo": "/osilver.logo.webp"
+        },
+        {
+            "title": "The Creative Department",
+            "rol": "Front end Developer",
+            "time": "March 2024 - July 2025",
+            "description": "I have experience creating complete websites from scratch using frameworks like Next.js and libraries like React, as well as developing new modules for existing platforms. My work also involves maintaining and improving the performance of current websites, implementing new styles and features based on designs provided by the UI/UX team. Additionally, I’ve integrated various third-party services and APIs, such as real-time data sources, Google Maps, and WordPress, to enhance functionality and user experience.",
+            "logo": "/tcd.logo.jpeg"
+        },
+        {
+            "title": "Interdesarrollos",
+            "rol": "IT manager",
+            "time": "December 2023 – March 2024",
+            "description": "Provided technical support both remotely and on-site, managing email accounts and ERP software licenses. Maintained the Intercambiacasa platform using PHP, MySQL, HTML, and CSS, adding new features and handling user and property management through the admin panel. Developed and updated product pages for the company using WIX Studio and React. Also handled equipment quotations, inventory management, and proposed workflow improvements to enhance efficiency across departments.",
+            "logo": "/interdesarrollos.jpeg"
+        },
+        {
+            "title": "The FUD Trailer",
+            "rol": "IT support",
+            "time": "February 2023 - December 2023",
+            "description": "Provided remote and on-site user support, managed email accounts, and configured secure access points for departments using MAC or IP filtering. Maintained and developed product websites with React and WordPress, integrating new modules and external APIs. Also handled server administration and business account management.",
+            "logo": "/the.fud.trailer.jpg"
+        },
+        {
+            "title": "Alleguard",
+            "rol": "Technical Support Intern",
+            "time": "Febrary 2022 - December 2022",
+            "description": "Assisted the development team with the implementation and maintenance of the corporate portal using C#, HTML, CSS, and JavaScript. Contributed to front-end component development to enhance user experience, and provided second-level technical support, resolving advanced software, hardware, and network issues.",
+            "logo": "/alleguard.logo.jpeg"
+        }
+    ],
+    "about_me_title": "About me",
+    "about_me_description": "Hi, I'm Victor! I specialize in front-end development, crafting seamless and interactive user experiences with modern web technologies. With 4+ years of professional experience, I combine creativity and technical skills to deliver high-quality projects. Outside of coding, I'm a huge fan of coffee and a passionate lucha libre fan, always excited to explore new ideas and innovations in the tech world.",
+    "projects_title": "Projects I've been involved in",
+    "projects": [
+        {
+            "title": "The Doctor Photo - (Redesign in progress)",
+            "link": "https://thedoctorphoto.com/",
+            "image": "/thedoctorphoto-logo.png",
+            "className": "object-cover bg-sky-400"
+        },
+        {
+            "title": "Optum CA Network",
+            "link": "https://optumcanetwork.com/",
+            "image": "/optum_orng_bg.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Calljar",
+            "link": "https://calljar.com/",
+            "image": "/jar-logo.svg",
+            "className": "object-contain bg-white py-6"
+        },
+        {
+            "title": "Nutrikas - (Redesign in progress)",
+            "link": "https://nutrikas.com.mx/",
+            "image": "/nutrikas-logo.png",
+            "className": "object-contain px-4"
+        },
+        {
+            "title": "Optum Resources",
+            "link": "https://resources.optum.com/",
+            "image": "/optum_bg_beige.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Broker Portal",
+            "link": "https://optumbrokerportal.com/",
+            "image": "/optum_bg_sky.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Plastic Surgery",
+            "link": "https://optumplasticsurgery.com/",
+            "image": "/optum_bg_beige.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Oregon",
+            "link": "https://optumor.com/",
+            "image": "/optum_orng_bg.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Arizona",
+            "link": "https://optumaz.com/",
+            "image": "/optum_bg_beige.png",
+            "className": "object-cover"
+        },
+        {
+            "title": "Optum Washington",
+            "link": "https://optumwa.com/",
+            "image": "/optum_orng_bg.png",
+            "className": "object-cover"
+        }
+    ],
+    "link_label": "Check project"
+}
