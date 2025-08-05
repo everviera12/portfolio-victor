@@ -5,8 +5,8 @@
     "work_experience_title": "Work experience",
     "experience": [
         {
-            "title": "Osilver MX",
-            "rol": "Freelance projects",
+            "title": "Freelance projects",
+            "rol": "Developer",
             "time": "",
             "description": "Development of landing pages, websites, online stores (ecommerce), custom solutions, and tech consulting for clients. I work on freelance projects focused on delivering professional and functional digital presence.",
             "logo": "/osilver.logo.webp"
@@ -45,7 +45,13 @@
     "projects_title": "Projects I've been involved in",
     "projects": [
         {
-            "title": "The Doctor Photo - (Redesign in progress)",
+            "title": "Mundo Píxel",
+            "link": "https://www.mundopixel.com.mx/",
+            "image": "/mundopixel-logo-words.svg",
+            "className": "object-contain px-5"
+        },
+        {
+            "title": "The Doctor Photo",
             "link": "https://thedoctorphoto.com/",
             "image": "/thedoctorphoto-logo.png",
             "className": "object-cover bg-sky-400"
