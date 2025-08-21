@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import LanguageSwitcher from './components/i18n-switch/LanguageSwitcher'
 import CardProject from "./components/CardProject";
 import ContactForm from "./components/ContactForm";
+import Implementation from "./components/Implementations";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,12 +37,20 @@ function App() {
         <>
             <LanguageSwitcher />
             <Hero />
+
+            <img src="/background/gradient-optimized.svg" className="absolute object-cover w-full left-0 -z-50 h-full top-[85%] lg:top-auto lg:h-auto lg:object-cover" />
+
             <CardProject />
-            <ExperienceSection />
-            <section ref={aboutRef} className="max-w-5xl mx-auto py-16 text-left space-y-3">
-                <h2 className="text-4xl font-bold">{t("about_me_title")}</h2>
+            <Implementation />
+
+            <section ref={aboutRef} className="max-w-6xl mx-auto py-16 text-left space-y-3">
+                <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent">
+                    {t("about_me_title")}
+                </h2>
                 <p className="text-lg leading-relaxed">{t("about_me_description")}</p>
             </section>
+
+            <ExperienceSection />
 
             <div className="py-16">
                 <ContactForm />

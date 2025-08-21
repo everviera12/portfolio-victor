@@ -25,7 +25,7 @@ export default function Hero() {
     return (
         <section
             ref={sectionRef}
-            className="flex flex-col-reverse items-center max-w-5xl justify-between mx-auto gap-6 py-16 md:flex-row lg:gap-0"
+            className="flex flex-col-reverse items-center max-w-[70rem] justify-between mx-auto gap-6 py-16 md:flex-row lg:gap-0"
         >
             <div className="text-center space-y-2 md:text-left">
                 <h1
@@ -39,7 +39,7 @@ export default function Hero() {
                     dangerouslySetInnerHTML={{ __html: t("hero_subtitle") }}
                 />
 
-                <div className="flex items-start gap-2 mt-10">
+                <div className="flex justify-center text-center items-start gap-2 mt-10 lg:justify-start">
                     <span className="text-lg font-semibold" dangerouslySetInnerHTML={{ __html: t("hero_span") }}/>
                     <svg
                         className="size-6 animate-bounce"

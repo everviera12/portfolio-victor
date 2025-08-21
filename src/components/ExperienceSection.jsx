@@ -86,9 +86,9 @@ export default function ExperienceSection() {
     );
 
     return (
-        <section className="py-16 max-w-5xl mx-auto space-y-16">
+        <section className="py-16 max-w-6xl  mx-auto space-y-16">
             <h2
-                className="text-4xl font-bold text-center mb-12"
+                className="text-4xl font-bold text-center mb-12 lg:text-start"
                 dangerouslySetInnerHTML={{ __html: t("work_experience_title") }}
             />
 

@@ -38,7 +38,7 @@ export default function ContactForm() {
         <form
             ref={formRef}
             onSubmit={handleSubmit(onSubmit)}
-            className="w-full max-w-5xl mx-auto text-left space-y-6 bg-black text-white"
+            className="w-full max-w-6xl mx-auto text-left space-y-6 bg-black text-white"
         >
             {/* Honeypots */}
             <div className="hidden">
