@@ -86,9 +86,9 @@ export default function ExperienceSection() {
     );
 
     return (
-        <section className="py-16 max-w-6xl  mx-auto space-y-16">
+        <section className="py-16 max-w-6xl mx-auto space-y-16">
             <h2
-                className="text-4xl font-bold text-center mb-12 lg:text-start"
+                className="text-4xl font-bold mb-12 text-start"
                 dangerouslySetInnerHTML={{ __html: t("work_experience_title") }}
             />
 
@@ -96,7 +96,7 @@ export default function ExperienceSection() {
                 <div
                     key={i}
                     ref={(el) => (sectionRefs.current[i] = el)}
-                    className={`flex justify-between items-start gap-8 flex-col md:flex-row `}
+                    className={`flex justify-between items-start gap-8 flex-col md:flex-row`}
                 >
                     <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border items-start">
                         {job.logo ? (

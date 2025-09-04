@@ -39,7 +39,7 @@ export default function CardProject() {
 
     return (
         <section className="max-w-6xl mx-auto px-6 py-20 space-y-12">
-            <h2 className="text-4xl text-start font-bold bg-gradient-to-r from-amber-300 via-orange-400 to-red-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl text-start font-bold lg:bg-gradient-to-r lg:from-amber-300 lg:via-orange-400 lg:to-red-400 lg:bg-clip-text lg:text-transparent">
                 {t("projects_title")}
             </h2>
 
