@@ -18,10 +18,6 @@ function App() {
 
     return (
         <>
-            <head>
-                <title>My Portfolio</title>
-            </head>
-
             <Hero />
             <CardsProject />
             <Carousel />

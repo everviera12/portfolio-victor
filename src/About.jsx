@@ -50,10 +50,6 @@ export default function About() {
 
     return (
         <>
-            <head>
-                <title>About</title>
-            </head>
-
             <section className="about-section py-16 flex ">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 about-text">
                     <div className="text-start">
