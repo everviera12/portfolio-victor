@@ -67,7 +67,9 @@ export default function Header() {
                 className="fixed inset-0 bg-black h-screen z-50 grid place-items-center text-center opacity-0"
             >
                 <div className="grid gap-8">
-                    <img src="/logo.svg" alt="Logo" className="w-auto px-10" />
+                    <a href="/" className="font-bricolage-bold text-2xl hover:text-victor-orange transition-all">
+                        Victor's Website
+                    </a>
 
                     <button
                         onClick={() => setOpen(false)}
