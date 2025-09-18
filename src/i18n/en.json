@@ -1,125 +1,107 @@
 {
-    "hero_title": "Hi, I'm Victor 👋",
-    "hero_subtitle": "Frontend developer with 4+ years of experience and coffee lover hehe ☕️ 🤎",
-    "hero_span": "Check out my projects",
-    "work_experience_title": "Work experience",
-    "experience": [
+    "nav_links": [
         {
-            "title": "Freelance projects",
-            "rol": "Developer",
-            "time": "",
-            "description": "Development of landing pages, websites, online stores (ecommerce), custom solutions, and tech consulting for clients. I work on freelance projects focused on delivering professional and functional digital presence.",
-            "logo": "/osilver.logo.webp"
+            "label": "Home",
+            "href": "/"
         },
         {
-            "title": "The Creative Department",
-            "rol": "Front end Developer",
-            "time": "March 2024 - July 2025",
-            "description": "I have experience creating complete websites from scratch using frameworks like Next.js and libraries like React, as well as developing new modules for existing platforms. My work also involves maintaining and improving the performance of current websites, implementing new styles and features based on designs provided by the UI/UX team. Additionally, I’ve integrated various third-party services and APIs, such as real-time data sources, Google Maps, and WordPress, to enhance functionality and user experience.",
-            "logo": "/tcd.logo.jpeg"
+            "label": "About me",
+            "href": "/about"
         },
         {
-            "title": "Interdesarrollos",
-            "rol": "IT manager",
-            "time": "December 2023 – March 2024",
-            "description": "Provided technical support both remotely and on-site, managing email accounts and ERP software licenses. Maintained the Intercambiacasa platform using PHP, MySQL, HTML, and CSS, adding new features and handling user and property management through the admin panel. Developed and updated product pages for the company using WIX Studio and React. Also handled equipment quotations, inventory management, and proposed workflow improvements to enhance efficiency across departments.",
-            "logo": "/interdesarrollos.jpeg"
+            "label": "Contact",
+            "href": "/contact"
+        }
+    ],
+    "hero_title": "Hello, I'm Victor 👋",
+    "hero_subtitle": "<span>Websites, stores, and <span class='text-victor-orange'>experiences</span> that truly <span class='text-victor-coral'>stand out.</span></span>",
+    "hero_text": "Frontend developer with over 4 years of experience and a coffee lover hehe ☕️ 🤎",
+    "hero_href": "Let's talk!",
+    "projects_title": "<span>Projects I've been <span class='text-victor-coral'>involved in.</span></span>",
+    "projects": [
+        {
+            "link": "https://thedoctorphoto.com/",
+            "image": "/mockups/tdpMuckup.webp"
         },
         {
-            "title": "The FUD Trailer",
-            "rol": "IT support",
-            "time": "February 2023 - December 2023",
-            "description": "Provided remote and on-site user support, managed email accounts, and configured secure access points for departments using MAC or IP filtering. Maintained and developed product websites with React and WordPress, integrating new modules and external APIs. Also handled server administration and business account management.",
-            "logo": "/the.fud.trailer.jpg"
+            "link": "https://optumwa.com/",
+            "image": "/mockups/optumwa.png"
         },
         {
-            "title": "Alleguard",
-            "rol": "Technical Support Intern",
-            "time": "Febrary 2022 - December 2022",
-            "description": "Assisted the development team with the implementation and maintenance of the corporate portal using C#, HTML, CSS, and JavaScript. Contributed to front-end component development to enhance user experience, and provided second-level technical support, resolving advanced software, hardware, and network issues.",
-            "logo": "/alleguard.logo.jpeg"
+            "link": "https://calljar.com/",
+            "image": "/mockups/calljar.png"
+        },
+        {
+            "link": "https://salemparfum.com/",
+            "image": "/mockups/salemparfumStore.png"
+        }
+    ],
+    "clients": [
+        {
+            "link": "https://www.mundopixel.com.mx/",
+            "image": "/clients-logos/mundopixel-logo.svg"
+        },
+        {
+            "link": "https://thedoctorphoto.com/",
+            "image": "/clients-logos/thedoctorphoto-logo.svg"
+        },
+        {
+            "link": "https://optumwa.com/",
+            "image": "/clients-logos/optum-logo.svg"
+        },
+        {
+            "link": "https://calljar.com/",
+            "image": "/clients-logos/jar-logo.svg"
+        },
+        {
+            "link": "https://nutrikas.com.mx/",
+            "image": "/clients-logos/nutrikas-logo.svg"
+        },
+        {
+            "link": "https://salemparfum.com/",
+            "image": "/clients-logos/ola.svg"
         }
     ],
     "about_me_title": "About me",
-    "about_me_description": "Hi, I'm Victor! I specialize in front-end development, crafting seamless and interactive user experiences with modern web technologies. With 4+ years of professional experience, I combine creativity and technical skills to deliver high-quality projects. Outside of coding, I'm a huge fan of coffee and a passionate lucha libre fan, always excited to explore new ideas and innovations in the tech world.",
-    "projects_title": "Projects I've been involved in",
-    "projects": [
+    "about_me_short_title": "I make your brand shine in the digital world.",
+    "about_me_description": "I'm passionate about developing and designing modern websites that combine functionality with visually attractive designs. My goal is to deliver unique digital experiences that captivate and engage my clients, always focusing on creativity and innovation.",
+    "about_me_short_description": "I’m Victor, a front-end developer with 4+ years of experience crafting modern, smooth, and interactive web experiences. I combine creativity and technical skills to deliver high-quality projects while constantly exploring new ideas in tech.",
+    "about_href": "Know more",
+    "services_title": "My services",
+    "services": [
         {
-            "title": "Mundo Píxel",
-            "link": "https://www.mundopixel.com.mx/",
-            "image": "/mundopixel-logo-words.svg",
-            "className": "object-contain px-6 bg-black border-b"
+            "title": "Websites",
+            "description": "Modern, fast, and optimized sites that represent your brand with a unique design."
         },
         {
-            "title": "The Doctor Photo",
-            "link": "https://thedoctorphoto.com/",
-            "image": "/thedoctorphoto-logo.png",
-            "className": "object-cover bg-sky-400"
+            "title": "Online stores",
+            "description": "Functional and scalable ecommerce solutions to sell your products easily and securely."
         },
         {
-            "title": "Optum CA Network",
-            "link": "https://optumcanetwork.com/",
-            "image": "/optum_orng_bg.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Calljar",
-            "link": "https://calljar.com/",
-            "image": "/jar-logo.svg",
-            "className": "object-contain bg-white py-6"
-        },
-        {
-            "title": "Nutrikas - (Redesign in progress)",
-            "link": "https://nutrikas.com.mx/",
-            "image": "/nutrikas-logo.png",
-            "className": "object-contain px-6 bg-black border-b"
-        },
-        {
-            "title": "Optum Resources",
-            "link": "https://resources.optum.com/",
-            "image": "/optum_bg_beige.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Broker Portal",
-            "link": "https://optumbrokerportal.com/",
-            "image": "/optum_bg_sky.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Plastic Surgery",
-            "link": "https://optumplasticsurgery.com/",
-            "image": "/optum_bg_beige.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Oregon",
-            "link": "https://optumor.com/",
-            "image": "/optum_orng_bg.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Arizona",
-            "link": "https://optumaz.com/",
-            "image": "/optum_bg_beige.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Washington",
-            "link": "https://optumwa.com/",
-            "image": "/optum_orng_bg.png",
-            "className": "object-cover"
+            "title": "Custom software",
+            "description": "Tailored solutions to optimize processes and address your business’s specific needs."
         }
     ],
-    "implementations_title": "Solutions and services I've offered",
-    "implementations_description": "Here are some examples of implementations I have carried out to improve functionality and user experience in some projects.",
-    "implementations": [
-        {
-            "name": "Interactive chart implementation",
-            "resource": "/videos/2025-08-20 16-47-44.mp4",
-            "description": "Are you looking for a way to present complex data clearly? This implementation shows you how to create an interactive chart so your users can understand the information at a glance.",
-            "link": "https://cryptodashboard.victorsweb.site/"
-        }
-    ],
-    "link_label": "Check project"
+    "form_title": "Let’s rock with me",
+    "form_data": {
+        "services_label": "Service",
+        "services": [
+            "Website",
+            "Ecommerce",
+            "Corporate website",
+            "Custom software",
+            "Database design",
+            "IT consulting",
+            "Process optimization",
+            "Cybersecurity",
+            "Cloud infrastructure"
+        ],
+        "fullname_label": "Full Name",
+        "phone_label": "Phone",
+        "mail_label": "Email",
+        "message_label": "Message",
+        "submit_text": "Send",
+        "success_message": "Message sent successfully!",
+        "error_message": "There was an error sending the message."
+    }
 }

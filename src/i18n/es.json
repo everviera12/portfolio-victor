@@ -1,125 +1,107 @@
 {
+    "nav_links": [
+        {
+            "label": "Inicio",
+            "href": "/"
+        },
+        {
+            "label": "Sobre mí",
+            "href": "/about"
+        },
+        {
+            "label": "Contacto",
+            "href": "/contact"
+        }
+    ],
     "hero_title": "Hola, soy Victor 👋",
-    "hero_subtitle": "Desarrollador frontend con más de 4 años de experiencia y amante del café hehe ☕️ 🤎",
-    "hero_span": "Mira mis proyectos",
-    "work_experience_title": "Experiencia laboral",
-    "experience": [
+    "hero_subtitle": "<span>Webs, tiendas y <span class='text-victor-orange'>experiencias</span> que realmente <span class='text-victor-coral'>destacan.</span></span>",
+    "hero_text": "Desarrollador frontend con más de 4 años de experiencia y amante del café hehe ☕️ 🤎",
+    "hero_href": "¡Hablemos!",
+    "projects_title": "<span>Proyectos en los que he estado <span class='text-victor-coral'>involucrado.</span></span>",
+    "projects": [
         {
-            "title": "Proyectos freelance",
-            "rol": "Desarrollador",
-            "time": "",
-            "description": "Desarrollo de landing pages, sitios web, tiendas en línea (ecommerce), soluciones personalizadas y asesoramiento tecnológico a clientes. Realizo proyectos freelance enfocados en ofrecer presencia digital profesional y funcional.",
-            "logo": "/osilver.logo.webp"
+            "link": "https://thedoctorphoto.com/",
+            "image": "/mockups/tdpMuckup.webp"
         },
         {
-            "title": "The Creative Department",
-            "rol": "Desarrollador Frontend",
-            "time": "Marzo 2024 - Julio 2025",
-            "description": "Tengo experiencia creando sitios web completos desde cero utilizando frameworks como Next.js y bibliotecas como React, así como desarrollando nuevos módulos para plataformas existentes. Mi trabajo también incluye mantener y mejorar el rendimiento de sitios web actuales, implementando nuevos estilos y funcionalidades basados en diseños del equipo de UI/UX. Además, he integrado varios servicios y APIs de terceros, como fuentes de datos en tiempo real, Google Maps y WordPress, para mejorar la funcionalidad y la experiencia del usuario.",
-            "logo": "/tcd.logo.jpeg"
+            "link": "https://optumwa.com/",
+            "image": "/mockups/optumwa.png"
         },
         {
-            "title": "Interdesarrollos",
-            "rol": "Gerente de TI",
-            "time": "Diciembre 2023 – Marzo 2024",
-            "description": "Brindé soporte técnico tanto de forma remota como presencial, gestionando cuentas de correo y licencias de software ERP. Di mantenimiento a la plataforma Intercambiacasa utilizando PHP, MySQL, HTML y CSS, añadiendo nuevas funcionalidades y gestionando usuarios e inmuebles desde el panel de administración. Desarrollé y actualicé páginas de productos para la empresa usando WIX Studio y React. También me encargué de cotizaciones de equipo, control de inventario y propuse mejoras de flujo de trabajo para aumentar la eficiencia entre departamentos.",
-            "logo": "/interdesarrollos.jpeg"
+            "link": "https://calljar.com/",
+            "image": "/mockups/calljar.png"
         },
         {
-            "title": "The FUD Trailer",
-            "rol": "Soporte Técnico",
-            "time": "Febrero 2023 - Diciembre 2023",
-            "description": "Brindé soporte a usuarios tanto remotamente como en sitio, gestioné cuentas de correo y configuré accesos seguros para los departamentos utilizando filtrado por MAC o IP. Di mantenimiento y desarrollé sitios de productos con React y WordPress, integrando nuevos módulos y APIs externas. También me encargué de la administración de servidores y cuentas empresariales.",
-            "logo": "/the.fud.trailer.jpg"
+            "link": "https://salemparfum.com/",
+            "image": "/mockups/salemparfumStore.png"
+        }
+    ],
+    "clients": [
+        {
+            "link": "https://www.mundopixel.com.mx/",
+            "image": "/clients-logos/mundopixel-logo.svg"
         },
         {
-            "title": "Alleguard",
-            "rol": "Practicante de Soporte Técnico",
-            "time": "Febrero 2022 - Diciembre 2022",
-            "description": "Apoyé al equipo de desarrollo en la implementación y mantenimiento del portal corporativo utilizando C#, HTML, CSS y JavaScript. Contribuí en el desarrollo de componentes front-end para mejorar la experiencia del usuario, y brindé soporte técnico de segundo nivel, resolviendo problemas avanzados de software, hardware y red.",
-            "logo": "/alleguard.logo.jpeg"
+            "link": "https://thedoctorphoto.com/",
+            "image": "/clients-logos/thedoctorphoto-logo.svg"
+        },
+        {
+            "link": "https://optumwa.com/",
+            "image": "/clients-logos/optum-logo.svg"
+        },
+        {
+            "link": "https://calljar.com/",
+            "image": "/clients-logos/jar-logo.svg"
+        },
+        {
+            "link": "https://nutrikas.com.mx/",
+            "image": "/clients-logos/nutrikas-logo.svg"
+        },
+        {
+            "link": "https://salemparfum.com/",
+            "image": "/clients-logos/salemparfum.png"
         }
     ],
     "about_me_title": "Sobre mí",
-    "about_me_description": "¡Hola! Soy Víctor. Me especializo en desarrollo front-end, creando experiencias de usuario fluidas e interactivas con tecnologías web modernas. Con más de 4 años de experiencia profesional, combino creatividad y habilidades técnicas para entregar proyectos de alta calidad. Fuera del código, soy un gran fanático del café y un amante de la lucha libre, siempre emocionado por explorar nuevas ideas e innovaciones en el mundo tecnológico.",
-    "projects_title": "Proyectos en los que he estado involucrado",
-    "projects": [
+    "about_me_short_title": "Hago que tu marca brille en el mundo digital.",
+    "about_me_description": "Me apasiona desarrollar y diseñar sitios web modernos que combinan funcionalidad con diseños visualmente atractivos. Mi objetivo es entregar experiencias digitales únicas que cautiven y conecten con mis clientes, siempre enfocado en la creatividad y la innovación.",
+    "about_me_short_description": "Soy Víctor, desarrollador front-end con 4+ años de experiencia creando experiencias web modernas, fluidas e interactivas. Combino creatividad y técnica para entregar proyectos de calidad, siempre explorando nuevas ideas en tecnología.",
+    "about_href": "Sobre mí",
+    "services_title": "Servicios más buscados",
+    "services": [
         {
-            "title": "Mundo Píxel",
-            "link": "https://www.mundopixel.com.mx/",
-            "image": "/mundopixel-logo-words.svg",
-            "className": "object-contain px-6 bg-black border-b"
+            "title": "Páginas web",
+            "description": "Sitios modernos, rápidos y optimizados que representan tu marca con un diseño único."
         },
         {
-            "title": "The Doctor Photo",
-            "link": "https://thedoctorphoto.com/",
-            "image": "/thedoctorphoto-logo.png",
-            "className": "object-cover bg-sky-400"
+            "title": "Tiendas en línea",
+            "description": "Ecommerce funcionales y escalables para vender tus productos de manera sencilla y segura."
         },
         {
-            "title": "Optum CA Network",
-            "link": "https://optumcanetwork.com/",
-            "image": "/optum_orng_bg.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Calljar",
-            "link": "https://calljar.com/",
-            "image": "/jar-logo.svg",
-            "className": "object-contain bg-white py-6"
-        },
-        {
-            "title": "Nutrikas - (Rediseño en progreso)",
-            "link": "https://nutrikas.com.mx/",
-            "image": "/nutrikas-logo.png",
-            "className": "object-contain px-5 bg-black border-b"
-        },
-        {
-            "title": "Optum Resources",
-            "link": "https://resources.optum.com/",
-            "image": "/optum_bg_beige.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Broker Portal",
-            "link": "https://optumbrokerportal.com/",
-            "image": "/optum_bg_sky.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Plastic Surgery",
-            "link": "https://optumplasticsurgery.com/",
-            "image": "/optum_bg_beige.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Oregon",
-            "link": "https://optumor.com/",
-            "image": "/optum_orng_bg.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Arizona",
-            "link": "https://optumaz.com/",
-            "image": "/optum_bg_beige.png",
-            "className": "object-cover"
-        },
-        {
-            "title": "Optum Washington",
-            "link": "https://optumwa.com/",
-            "image": "/optum_orng_bg.png",
-            "className": "object-cover"
+            "title": "Software personalizado",
+            "description": "Soluciones a la medida para optimizar procesos y resolver necesidades específicas de tu negocio."
         }
     ],
-    "implementations_title": "Soluciones y servicios que he ofrecido",
-    "implementations_description": "Aquí hay algunos ejemplos de implementaciones que he realizado para mejorar la funcionalidad y la experiencia del usuario en algunos proyectos.",
-    "implementations": [
-        {
-            "name": "Implementación de gráfica interactiva",
-            "resource": "/videos/2025-08-20 16-47-44.mp4",
-            "description": "¿Buscas una forma de presentar datos complejos de manera clara? Esta implementación te muestra cómo crear un gráfico interactivo para que tus usuarios entiendan la información de un vistazo.",
-            "link": "https://cryptodashboard.victorsweb.site/"
-        }
-    ],
-    "link_label": "Ver proyecto"
+    "form_title": "Trabajemos juntos!",
+    "form_data": {
+        "services_label": "Servicio",
+        "services": [
+            "Página web",
+            "Ecommerce",
+            "Página web empresarial",
+            "Software a la medida",
+            "Diseño de bases de datos",
+            "Consultoría en TI",
+            "Optimización de procesos",
+            "Seguridad informática",
+            "Infraestructura en la nube"
+        ],
+        "fullname_label": "Nombre",
+        "phone_label": "Teléfono",
+        "mail_label": "Correo electrónico",
+        "message_label": "Mensaje",
+        "submit_text": "Enviar",
+        "success_message": "¡Mensaje enviado con éxito!",
+        "error_message": "Hubo un error al enviar el mensaje."
+    }
 }

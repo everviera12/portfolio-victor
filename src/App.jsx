@@ -1,58 +1,71 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ExperienceSection from './components/ExperienceSection'
 import Hero from './components/Hero'
-import LanguageSwitcher from './components/i18n-switch/LanguageSwitcher'
-import CardProject from "./components/CardProject";
+import CardsProject from "./components/CardsProject";
+import { useGsapScrollAnimation } from "./components/hooks/useGsapScrollAnimation";
+import Carousel from "./components/Carousel";
+import Link from "./components/ui/Link";
 import ContactForm from "./components/ContactForm";
-import Implementation from "./components/Implementations";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
     const { t } = useTranslation();
     const aboutRef = useRef(null);
-
-    useEffect(() => {
-        gsap.fromTo(
-            aboutRef.current,
-            { opacity: 0, y: 50 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: aboutRef.current,
-                    start: "top 80%",
-                    toggleActions: "play none none none",
-                },
-            }
-        );
-    }, []);
+    useGsapScrollAnimation(aboutRef);
 
     return (
         <>
-            <LanguageSwitcher />
+            <head>
+                <title>My Portfolio</title>
+            </head>
+
             <Hero />
+            <CardsProject />
+            <Carousel />
+            <section
+                ref={aboutRef}
+                className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+            >
+                {/* Columna Izquierda: Texto */}
+                <div className="space-y-6 text-left">
+                    <h2 className="!font-archivo-black text-4xl md:text-5xl bg-gradient-to-r from-victor-orange via-victor-coral to-victor-skyblue bg-clip-text text-transparent">
+                        {t("about_me_title")}
+                    </h2>
 
-            <img src="/background/gradient-optimized.svg" className="absolute object-cover w-full left-0 -z-50 h-full top-[85%] lg:top-auto lg:h-auto lg:object-cover" />
+                    <p className="text-lg leading-relaxed text-victor-black max-w-xl">
+                        {t("about_me_description")}
+                    </p>
 
-            <CardProject />
-            <Implementation />
+                    <Link
+                        link="/about"
+                        label={t("about_href")}
+                        baseColor="#FF7F33"
+                        hoverColor="#000814"
+                        textColor="#ffffff"
+                        linkClasses="py-3 px-6"
+                        labelClasses="font-semibold text-lg lg:text-xl"
+                    />
+                </div>
 
-            <section ref={aboutRef} className="max-w-6xl mx-auto py-16 text-left space-y-3">
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent">
-                    {t("about_me_title")}
-                </h2>
-                <p className="text-lg leading-relaxed">{t("about_me_description")}</p>
+                {/* Columna Derecha: Imagen */}
+                <div className="flex justify-center md:justify-end">
+                    <img
+                        src="/avatar/avatar-asowme.svg"
+                        alt="Victor Avatar"
+                        className="w-60 md:w-80 lg:w-[22rem] drop-shadow-xl"
+                    // style={{
+                    //     WebkitMaskImage: "linear-gradient(black 85%, transparent 100%)",
+                    //     maskImage: "linear-gradient(black 85%, transparent 100%)",
+                    // }} 
+                    />
+                </div>
             </section>
 
-            <ExperienceSection />
-
-            <div className="py-16">
+            <div className="bg-victor-orange absolute left-0 w-full rounded-t-2xl py-16">
+                <h2 className="text-5xl text-white">{t("form_title")}</h2>
                 <ContactForm />
             </div>
         </>

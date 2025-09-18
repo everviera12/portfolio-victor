@@ -1,13 +1,27 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
+
+@theme {
+  --color-victor-orange: #FF7F33;
+  --color-victor-light-gray: #F5F5F5;
+  --color-victor-skyblue: #D9F6FA;
+  --color-victor-beige: #FDEBD0;
+  --color-victor-coral: #FF3366;
+  --color-victor-black: #000814;
+
+  /* fonts */
+  --font-inter: "Inter", system-ui;
+  --font-archivo-black: "ArchivoBlack", system-ui;
+  --font-bricolage-bold: "BricolageGrotesqueBold", system-ui;
+  --font-bricolage-semi: "BricolageGrotesqueSemi", system-ui;
+  --font-bricolage-medium: "BricolageGrotesqueMedium", system-ui;
+}
 
 :root {
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000;
+  color: #000814;
+  background-color: var(--color-light-gray);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,9 +36,51 @@
   text-align: center;
 }
 
-body {
-  font-family: "Bricolage Grotesque", sans-serif;
+@font-face {
+  font-family: "ArchivoBlack";
+  src: url("/fonts/Archivo_Black/ArchivoBlack-Regular.ttf") format("opentype");
+  font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "BricolageGrotesqueMedium";
+  src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BricolageGrotesqueSemi";
+  src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BricolageGrotesqueBold";
+  src: url("/fonts/Bricolage_Grotesque/BricolageGrotesque-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  /* font-family: "BricolageGrotesqueBold", sans-serif; */
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-victor-black);
+}
+
+h2,
+h3 {
+  font-family: var(--font-archivo-black), sans-serif;
+  font-weight: 600;
+  margin: 0;
 }
 
 button {

@@ -1,8 +1,11 @@
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import Icon from "./Icon";
 
 export default function ContactForm() {
+    const { t } = useTranslation();
     const formRef = useRef(null);
     const [sent, setSent] = useState(false);
     const [error, setError] = useState(false);
@@ -38,7 +41,7 @@ export default function ContactForm() {
         <form
             ref={formRef}
             onSubmit={handleSubmit(onSubmit)}
-            className="w-full max-w-6xl mx-auto text-left space-y-6 bg-black text-white"
+            className="w-full max-w-6xl mx-auto text-left space-y-6 rounded-xl text-white p-6 lg:p-0"
         >
             {/* Honeypots */}
             <div className="hidden">
@@ -46,86 +49,99 @@ export default function ContactForm() {
                 <input type="text" {...register("website")} autoComplete="off" tabIndex={-1} />
             </div>
 
-            {/* Nombre */}
+            {/* Fullname */}
             <div>
-                <label htmlFor="fullname" className="block text-sm mb-1">Nombre *</label>
+                <label htmlFor="fullname" className="block text-sm mb-1">
+                    {t("form_data.fullname_label")} *
+                </label>
                 <input
                     type="text"
                     id="fullname"
-                    {...register("fullname", {
-                        required: "El nombre es obligatorio",
-                        pattern: {
-                            value: /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/,
-                            message: "Solo se permiten letras y espacios",
-                        },
-                    })}
-                    className="w-full border-b border-white bg-transparent text-sm px-1 py-2 focus:outline-none"
+                    {...register("fullname", { required: t("form_data.fullname_label") + " is required" })}
+                    className="w-full border-b border-white bg-transparent text-white text-sm px-1 py-2 focus:outline-none "
                 />
-                {errors.fullname && <p className="text-xs text-red-500 mt-1">{errors.fullname.message}</p>}
+                {errors.fullname && <p className="text-xs text-victor-beige font-bricolage-medium mt-2">{errors.fullname.message}</p>}
             </div>
 
-            {/* Teléfono + Correo en la misma fila */}
+            {/* Phone number + Email */}
             <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-6 sm:space-y-0">
-                {/* Teléfono */}
                 <div className="w-full">
-                    <label htmlFor="phone" className="block text-sm mb-1">Teléfono</label>
+                    <label htmlFor="phone" className="block text-sm mb-1">
+                        {t("form_data.phone_label")}
+                    </label>
                     <input
                         type="tel"
                         id="phone"
-                        {...register("phone", {
-                            pattern: {
-                                value: /^\d{7,15}$/,
-                                message: "Solo se permiten números (mín. 7 dígitos)",
-                            },
-                        })}
-                        className="w-full border-b border-white bg-transparent text-sm px-1 py-2 focus:outline-none"
+                        {...register("phone")}
+                        className="w-full border-b border-white bg-transparent text-white text-sm px-1 py-2 focus:outline-none "
                     />
-                    {errors.phone && <p className="text-xs text-red-500 mt-1">{errors.phone.message}</p>}
                 </div>
 
-                {/* Correo */}
                 <div className="w-full">
-                    <label htmlFor="mail" className="block text-sm mb-1">Correo electrónico *</label>
+                    <label htmlFor="mail" className="block text-sm mb-1">
+                        {t("form_data.mail_label")} *
+                    </label>
                     <input
                         type="email"
                         id="mail"
-                        {...register("mail", {
-                            required: "El correo es obligatorio",
-                            pattern: {
-                                value: /^\S+@\S+\.\S+$/,
-                                message: "Correo no válido",
-                            },
-                        })}
-                        className="w-full border-b border-white bg-transparent text-sm px-1 py-2 focus:outline-none"
+                        {...register("mail", { required: t("form_data.mail_label") + " is required" })}
+                        className="w-full border-b border-white bg-transparent text-white text-sm px-1 py-2 focus:outline-none "
                     />
-                    {errors.mail && <p className="text-xs text-red-500 mt-1">{errors.mail.message}</p>}
+                    {errors.mail && <p className="text-xs text-victor-beige font-bricolage-medium mt-2">{errors.mail.message}</p>}
                 </div>
             </div>
 
-            {/* Mensaje */}
+            {/* Service Select */}
+            <div className="relative w-full">
+                <select
+                    {...register("service", { required: true })}
+                    className="w-full border border-white bg-transparent text-white text-sm p-2 focus:outline-none  appearance-none"
+                >
+                    <option value="">{t("form_data.services_label")}</option>
+                    {t("form_data.services", { returnObjects: true }).map((service, idx) => (
+                        <option key={idx} value={service} className="bg-black text-white">
+                            {service}
+                        </option>
+                    ))}
+                </select>
+
+                {/* Flecha personalizada */}
+                <div className="absolute inset-y-0 right-2 flex items-center pointer-events-none text-white">
+                    <Icon className="size-4" name="arrow-dropdown" />
+                </div>
+            </div>
+
+            {/* Message */}
             <div>
-                <label htmlFor="message" className="block text-sm mb-1">Mensaje *</label>
+                <label htmlFor="message" className="block text-sm mb-1">
+                    {t("form_data.message_label")} *
+                </label>
                 <textarea
                     id="message"
                     rows={5}
-                    {...register("message", {
-                        required: "Por favor escribe un mensaje",
-                        validate: (value) => value.trim().length > 0 || "El mensaje no puede estar vacío",
-                    })}
-                    className="w-full border-b border-white bg-transparent text-sm px-1 py-2 focus:outline-none resize-none"
+                    {...register("message", { required: t("form_data.message_label") + " is required" })}
+                    className="w-full border-b border-white bg-transparent text-white text-sm px-1 py-2 focus:outline-none  resize-none"
                 />
-                {errors.message && <p className="text-xs text-red-500 mt-1">{errors.message.message}</p>}
+                {errors.message && <p className="text-xs text-victor-beige font-bricolage-medium mt-2">{errors.message.message}</p>}
             </div>
 
-            {/* Mensaje de estado */}
-            {sent && <p className="text-sm text-green-400">¡Mensaje enviado con éxito!</p>}
-            {error && <p className="text-sm text-red-500">Hubo un error al enviar el mensaje.</p>}
+            {sent && (
+                <p className="text-sm font-archivo-black text-[#1AD1A5]">
+                    {t("form_data.success_message")}
+                </p>
+            )}
+
+            {error && (
+                <p className="text-sm font-archivo-black text-[#FF3366]">
+                    {t("form_data.error_message")}
+                </p>
+            )}
 
             <button
                 type="submit"
-                className="w-full border cursor-pointer border-white py-2 text-sm font-medium uppercase bg-transparent hover:bg-white hover:text-black transition-all duration-300"
+                className="w-full py-3 uppercase transition-all duration-300 bg-victor-skyblue text-victor-black"
             >
-                Enviar
+                {t("form_data.submit_text")}
             </button>
         </form>
     );
